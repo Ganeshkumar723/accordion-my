@@ -19,25 +19,25 @@
 
 /* step -3 - componentContainer */
 .accordionContainer {
-    /* background-color: rgb(91, 226, 12); */
+    background-color: rgb(255, 255, 255);
 
 }
 
 /* step -4 - row */
 .accordionBody {
-    /* background-color: rgb(253, 0, 0); */
+    background-color: rgb(255, 255, 255);
 
 }
 
 /* step -5 - column */
 .accordionBlock {
-    /* background-color: #fc03c6; */
+    background-color: #ffffff;
    
 }
 
 /* step -6 - subColumn */
 .accordionBox {
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
     
 }
 
