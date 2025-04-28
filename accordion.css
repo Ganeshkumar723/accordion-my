@@ -1,0 +1,92 @@
+/* HTML STRUCTURE */
+/* Step -1 - parentContainer */
+/* step -2 - component */
+/* step -3 - componentContainer */
+/* step -4 - row */
+/* step -5 - column */
+/* step -6 - subColumn */
+/* step -7 - contentContainer */
+/* step -8 - content */
+
+/* parent Container - default css style */
+
+
+/* step -2 - component */
+.accordion {
+    background-color: rgb(255, 205, 205);  
+   
+}
+
+/* step -3 - componentContainer */
+.accordionContainer {
+    /* background-color: rgb(91, 226, 12); */
+
+}
+
+/* step -4 - row */
+.accordionBody {
+    /* background-color: rgb(253, 0, 0); */
+
+}
+
+/* step -5 - column */
+.accordionBlock {
+    /* background-color: #fc03c6; */
+   
+}
+
+/* step -6 - subColumn */
+.accordionBox {
+    /* background-color: #ffffff; */
+    
+}
+
+/* step -7 - contentContainer */
+.accordionTitle{
+background:linear-gradient(90deg,rgb(247, 0, 255),rgb(0, 225, 255));
+border: 2px solid rgb(77, 4, 87);
+cursor: pointer;
+position: relative;
+font-size: 2rem;
+font-weight: bold;
+letter-spacing: 2px;
+display: flex;
+align-items: center;
+padding: 2rem;
+
+}
+.accordionTitle::after{
+    content: '-';
+    display: block;
+    position: absolute ;
+    right: 3rem;
+    color: rgb(32, 22, 59);
+    font-size: 5rem;
+}
+
+.accordionTitle:hover{
+    background: linear-gradient(90deg,rgb(223, 15, 50),orange);
+}
+
+.accordionContent{
+    background-image: url(./assets/images/images.jpeg);
+    
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 4rem;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow:0 0 10px #FF0000, 0 0 15px #0000FF ;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.active .accordionTitle::after{
+    content: '+';
+}
+
+.active .accordionContent{
+    opacity: 0;
+    padding: 5px;
+    height: 0px;
+    }
